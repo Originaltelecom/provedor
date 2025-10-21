@@ -8,7 +8,7 @@
 }
 *{box-sizing:border-box}
 html,body{height:100%}
-body{font-family:Inter, Arial, sans-serif;margin:0;color:var(--dark);background:linear-gradient(180deg,#ffffff,#eef6ff);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:Inter, Arial, sans-serif;margin:0;color:var(--dark);background:linear-gradient(180deg,#FF921C,#ECA427);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .container{max-width:1150px;margin:0 auto;padding:20px}
 .site-header{background:transparent;padding:14px 0;position:sticky;top:0;z-index:80}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
