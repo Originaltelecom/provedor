@@ -1,0 +1,141 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Original Telecom — Internet rápida e estável</title>
+  <meta name="description" content="Original Telecom — internet de fibra óptica com atendimento local e instalação rápida.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="whatsapp-floating" href="https://wa.me/5582987278815?text=Ol%C3%A1%20Original%20Telecom%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener">WhatsApp</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.svg" alt="Original Telecom" class="logo">
+        <div class="brand-text">
+          <h1>Original Telecom</h1>
+          <p class="tagline">Internet rápida e estável para sua casa e empresa.</p>
+        </div>
+      </div>
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <a href="#home">Home</a>
+        <a href="#planos">Planos</a>
+        <a href="#segunda-via">Segunda Via</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <a class="btn" href="client.html">Área do Cliente</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <!-- "fibra óptica" animada via SVG e CSS -->
+        <svg class="fibers" viewBox="0 0 1200 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#ff6a00" stop-opacity="0.9" />
+              <stop offset="1" stop-color="#0b5bff" stop-opacity="0.9" />
+            </linearGradient>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="8" result="blur" />
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <!-- várias linhas curvas simulando fibras -->
+          <path class="fiber" d="M0 300 C200 120 400 120 600 300 C800 480 1000 480 1200 300" stroke="url(#g1)" stroke-width="3" fill="none" filter="url(#glow)"></path>
+          <path class="fiber" d="M0 250 C220 80 420 80 600 250 C780 420 980 420 1200 250" stroke="#25D366" stroke-width="2" fill="none" opacity="0.9"></path>
+          <g class="pulses"></g>
+        </svg>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-left">
+          <h2 class="hero-title">Conexão de fibra que conecta sua vida.</h2>
+          <p class="hero-sub">Planos residenciais e empresariais, instalação rápida e suporte local. Experimente internet sem interrupções.</p>
+          <div class="hero-ctas">
+            <a class="btn large" href="#planos">Ver Planos</a>
+            <a class="btn outline" href="https://wa.me/5582987278815?text=Quero%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener">Fale no WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- mascote como svg embutido para alta qualidade -->
+          <div class="mascot" aria-hidden="true">
+            <!-- mascot.svg content will be loaded from file for easier editing; fallback inline shown here -->
+            <img src="mascot.svg" alt="Mascote Original Telecom - OT" class="mascot-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos" class="container cards-grid section-box">
+      <h2>Planos</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Essencial</h3>
+          <p>50 Mbps — ideal para família</p>
+          <p class="price">R$ 69,90/mês</p>
+          <a class="btn" href="https://wa.me/5582987278815?text=Quero%20contratar%20o%20plano%20Essencial" target="_blank" rel="noopener">Assinar</a>
+        </article>
+        <article class="card">
+          <h3>Velocidade</h3>
+          <p>120 Mbps — streaming e home office</p>
+          <p class="price">R$ 119,90/mês</p>
+          <a class="btn" href="https://wa.me/5582987278815?text=Quero%20contratar%20o%20plano%20Velocidade" target="_blank" rel="noopener">Assinar</a>
+        </article>
+        <article class="card">
+          <h3>Ultra</h3>
+          <p>300 Mbps — empresas e gamers</p>
+          <p class="price">R$ 199,90/mês</p>
+          <a class="btn" href="https://wa.me/5582987278815?text=Quero%20contratar%20o%20plano%20Ultra" target="_blank" rel="noopener">Assinar</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="segunda-via" class="container section-box">
+      <h2>Segunda Via</h2>
+      <p>Recupere sua fatura rapidamente. Insira seu CPF ou número de cliente.</p>
+      <form id="segundaViaForm" class="form-inline">
+        <input type="text" id="cliente" name="cliente" placeholder="Número do Cliente ou CPF" required>
+        <button class="btn" type="submit">Gerar Segunda Via</button>
+      </form>
+    </section>
+
+    <section id="depoimentos" class="container section-box">
+      <h2>Depoimentos</h2>
+      <div class="testimonials">
+        <blockquote>“Ótimo atendimento e internet muito estável.” — João S.</blockquote>
+        <blockquote>“Instalaram rápido e o suporte é muito atencioso.” — Ana P.</blockquote>
+      </div>
+    </section>
+
+    <section id="contato" class="container section-box">
+      <h2>Contato</h2>
+      <p>WhatsApp: <a href="https://wa.me/5582987278815">(82) 98727-8815</a></p>
+      <form id="contactForm" class="form-column">
+        <input name="name" placeholder="Nome" required>
+        <input name="phone" placeholder="Telefone" required>
+        <textarea name="message" placeholder="Sua mensagem"></textarea>
+        <button class="btn" type="submit">Enviar via WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="socials">
+        <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+      <p>&copy; <span id="year"></span> Original Telecom — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
